@@ -1067,7 +1067,7 @@ bunx shadcn-svelte@latest add form
       {/if}
     </CardTitle>
     {#if recipe.description}
-      <p class="text-muted-foreground text-sm">{recipe.description}</p>
+      <p class="text-sm text-muted-foreground">{recipe.description}</p>
     {/if}
   </CardHeader>
 
@@ -1084,7 +1084,7 @@ bunx shadcn-svelte@latest add form
     <!-- Ingredients Preview -->
     <div>
       <h4 class="mb-2 text-sm font-medium">Ingredients ({ingredients.length})</h4>
-      <ul class="text-muted-foreground space-y-1 text-sm">
+      <ul class="space-y-1 text-sm text-muted-foreground">
         {#each ingredients.slice(0, 3) as ingredient}
           <li>{ingredient.name} - {ingredient.volumeInMl}ml</li>
         {/each}
@@ -1181,7 +1181,7 @@ bunx shadcn-svelte@latest add form
   <!-- Search and Filter -->
   <div class="mb-6 flex gap-4">
     <div class="relative max-w-md flex-1">
-      <Search class="text-muted-foreground absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2" />
+      <Search class="absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
       <Input type="search" placeholder="Search recipes..." class="pl-10" bind:value={searchQuery} />
     </div>
 
@@ -1196,7 +1196,7 @@ bunx shadcn-svelte@latest add form
   <!-- Recipe Grid -->
   {#if recipesQuery.isLoading}
     <div class="flex justify-center py-12">
-      <div class="border-primary h-8 w-8 animate-spin rounded-full border-b-2"></div>
+      <div class="h-8 w-8 animate-spin rounded-full border-b-2 border-primary"></div>
     </div>
   {:else if recipesQuery.data}
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -1215,7 +1215,7 @@ bunx shadcn-svelte@latest add form
     </div>
 
     {#if recipesQuery.data.length === 0}
-      <div class="text-muted-foreground py-12 text-center">
+      <div class="py-12 text-center text-muted-foreground">
         <p>No recipes found. Try a different search or create your first recipe!</p>
       </div>
     {/if}
@@ -1710,7 +1710,7 @@ export const saveGeneratedRecipe = internalAction({
           <ol class="space-y-2">
             {#each generatedRecipe.steps as step}
               <li class="flex gap-3">
-                <span class="text-primary font-medium">{step.stepNumber}.</span>
+                <span class="font-medium text-primary">{step.stepNumber}.</span>
                 <span>{step.description}</span>
               </li>
             {/each}
@@ -2164,18 +2164,18 @@ export const getSearchRunWithResults = internalAction({
               {#if result.products.length > 0}
                 <ul class="space-y-2">
                   {#each result.products.slice(0, 3) as product}
-                    <li class="bg-muted flex items-start justify-between gap-4 rounded p-2">
+                    <li class="flex items-start justify-between gap-4 rounded bg-muted p-2">
                       <div class="flex-1">
                         <a
                           href={product.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="text-primary flex items-center gap-1 font-medium hover:underline"
+                          class="flex items-center gap-1 font-medium text-primary hover:underline"
                         >
                           {product.title}
                           <ExternalLink class="h-3 w-3" />
                         </a>
-                        <div class="text-muted-foreground mt-1 flex gap-3 text-sm">
+                        <div class="mt-1 flex gap-3 text-sm text-muted-foreground">
                           {#if product.priceText}
                             <span>{product.priceText}</span>
                           {/if}
@@ -2191,7 +2191,7 @@ export const getSearchRunWithResults = internalAction({
                   {/each}
                 </ul>
               {:else}
-                <p class="text-muted-foreground text-sm">No products found for this ingredient.</p>
+                <p class="text-sm text-muted-foreground">No products found for this ingredient.</p>
               {/if}
             </div>
           {/each}
@@ -2200,7 +2200,7 @@ export const getSearchRunWithResults = internalAction({
     {/if}
 
     <!-- Info Note -->
-    <p class="text-muted-foreground text-xs">
+    <p class="text-xs text-muted-foreground">
       Results are sourced from Total Wine. Prices and availability may vary. Save your search to reference later.
     </p>
   </CardContent>
@@ -2464,7 +2464,7 @@ export function calculateTimeUntilSober(bac: number): number {
     {/if}
   </div>
 {:else}
-  <div class="bg-muted text-muted-foreground rounded-lg border p-3 text-sm">
+  <div class="rounded-lg border bg-muted p-3 text-sm text-muted-foreground">
     <p>Add your weight and biological sex in profile settings to see BAC estimates.</p>
   </div>
 {/if}
