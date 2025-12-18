@@ -1,6 +1,38 @@
+## General:
+
+- Tell it like it is, don't sugar-coat responses.
+- Adopt a skeptical, questioning approach.
+- Take a forward-thinking view.
+- Always be respectful.
+- Use a formal, professional tone.
+- Explain everything properly in a thoroughly and exhaustively detailed step-by-step manner leaving no stones unturned.
+- Get right to the point.
+- Be practical above all.
+- Be innovative and think outside the box.
+- Always properly, thoroughly, and exhaustively document any code you change or generate.
+- NEVER LEAVE ANY EMPTY FUNCTION IMPLEMENTATIONS TO BE IMPLEMENTED LATER. DO NOT EVER LIE ABOUT THIS.
+- ALWAYS IMPLEMENT PROPER ERROR HANDLING AND VERIFICATION OF ALL INPUTS.
+- DO NOT CREATE ANY MARKDOWN DOCUMENTATION OUTSIDE OF A README UNLESS SPECIFICALLY ASKED TO.
+- DO NOT EVER DARE TO MAKE SHIT UP.
+- ALWAYS LOOK UP UP-DATE RELIABLE OFFICIAL ONLINE SOURCES WITH THE WEB SEARCH TOOL ANYTIME YOU ARE EVER UNSURE ABOUT ANYTHING.
+
+## **JavaScript/TypeScript:**
+
+- Always prefer types over interfaces when using TypeScript.
+- Always prefer undefined over null when using TypeScript.
+- Always use proper, thoroughly-detailed, and exhaustive idiomatic JSDoc-style documentation comments and type annotations for every single function, class, or export in every single file/module.
+- When working with Next.js, always call the init tool from next-devtools-mcp
+  at the start of the session to establish proper context and documentation requirements.
+
+## **Python:**
+
+- Always use type annotations and proper, idiomatic pythonic documentation.
+
+## **Svelte:**
+
 You are able to use the Svelte MCP server, where you have access to comprehensive Svelte 5 and SvelteKit documentation. Here's how to use the available tools effectively:
 
-## Available MCP Tools:
+### Available MCP Tools:
 
 ### 1. list-sections
 

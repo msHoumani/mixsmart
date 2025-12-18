@@ -34,8 +34,23 @@ export default defineConfig({
         test: {
           name: "server",
           environment: "node",
-          include: ["src/**/*.{test,spec}.{js,ts}"],
+          include: [
+            "src/**/*.{test,spec}.{js,ts}",
+            "tests/convex/**/*.{test,spec}.{js,ts}",
+            "tests/lib/**/*.{test,spec}.{js,ts}"
+          ],
           exclude: ["src/**/*.svelte.{test,spec}.{js,ts}"]
+        }
+      },
+
+      {
+        extends: "./vite.config.ts",
+
+        test: {
+          name: "tests-dom",
+          environment: "jsdom",
+          setupFiles: ["./tests/setup.ts"],
+          include: ["tests/components/**/*.{test,spec}.{js,ts}"]
         }
       }
     ]
